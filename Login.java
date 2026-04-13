@@ -106,7 +106,7 @@ class Main {
         
         System.out.println("Welcome to Quickchat.");
         
-        // ======REGISTER======
+        // ======= REGISTER =======
         System.out.println("Enter Username:");
         userDetails[0]= input.nextLine();
         
