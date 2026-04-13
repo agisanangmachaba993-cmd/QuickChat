@@ -101,7 +101,7 @@ class Main {
     public static void main(String[] arg){
         Scanner input = new Scanner(System.in);
         Login login = new Login();
-        // ARRAY
+        // ARRAY input
         String[] userDetails = new String[3];
         
         System.out.println("Welcome to Quickchat.");
