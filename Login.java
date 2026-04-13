@@ -120,7 +120,7 @@ class Main {
         
         System.out.println(message);
         
-        // ====== LOGIN======
+        // ======= LOGIN=======
         System.out.println("\nLogin now:");
         
         System.out.println("Enter Username:");
