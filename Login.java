@@ -15,7 +15,7 @@ public class Login {
     String Username;
     String password;
     String cellphonenumber;
-    //check Username
+    //check Username validation
     
     public boolean checkUsername(String Username){
         if (Username== null){
