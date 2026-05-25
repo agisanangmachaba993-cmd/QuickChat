@@ -56,7 +56,8 @@ public class Message {
            // Handle all invalid pr discribed choices
            return "Message discarded.";
        }
-/** Formats and outputs the message dara. */      
+/** Formats and outputs the message dara. */ 
+       // Combine thr ID and message hash 
    }
    public String printMessages(){
        return "Message ID: " + messageID
