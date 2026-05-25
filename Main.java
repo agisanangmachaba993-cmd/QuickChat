@@ -61,6 +61,7 @@ public class Main {
                 System.out.println("3.Disregard Message");
                 
                 int choice = input.nextInt();
+                // step 5: capture user menu choice for message handling
                 input.nextLine();
                 
                 System.out.println(message.sentMessage(choice));
