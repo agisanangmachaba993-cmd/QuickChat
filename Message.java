@@ -63,6 +63,7 @@ public class Message {
    public String printMessages(){
        return "Message ID: " + messageID
            /** Returns the total global message count. */
+           // Accesses the static message tracking counter.
        + "\nMessage Hash:" + createMessageHash()
        +"\nRecipient:"+ recipient
        + "\nMessage:" + messageText;
