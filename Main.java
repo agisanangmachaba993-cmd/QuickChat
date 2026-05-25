@@ -22,6 +22,7 @@ public class Main {
         
         boolean loginStatus = login.loginUser(username, password);
         if (loginStatus){
+            // step 2: Check login status before sending messages
             System.out.println("\nHow many messages would you like to send?");
             int numberOfMessages = input.nextInt();
             input.nextLine();
