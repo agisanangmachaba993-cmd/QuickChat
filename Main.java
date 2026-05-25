@@ -10,6 +10,7 @@ import java.util.Scanner;
  * @author User
  */
 public class Main {
+    // step:1 Main entry point for Quickchat application
     public static void main(String[]args){
         Scanner input = new Scanner(System.in);
         Login login = new Login();
