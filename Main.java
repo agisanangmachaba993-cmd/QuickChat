@@ -38,6 +38,7 @@ public class Main {
                 System.out.println("Enter message:");
                 String messageText = input.nextLine();
                 if(messageText.length() > 250){
+                    // step 3: validate the message length does not exceed 250 characters
                    System.out.println("Message exceds 250 charaters by" +(messageText.length()-250));
                    i--;
                    continue;
