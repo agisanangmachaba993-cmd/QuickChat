@@ -50,6 +50,7 @@ public class Main {
                     continue;
                 }
                 if (!message.checkRecipientCell()){
+                    // step 4:Check if the recipent cell phone number is valid
                     System.out.println("Cell phone number is incorrectly formatted");
                     i--;
                     continue;
