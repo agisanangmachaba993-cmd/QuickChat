@@ -62,6 +62,7 @@ public class Message {
     // combines the recipient and text body
    public String printMessages(){
        return "Message ID: " + messageID
+           /** Returns the total global message count. */
        + "\nMessage Hash:" + createMessageHash()
        +"\nRecipient:"+ recipient
        + "\nMessage:" + messageText;
