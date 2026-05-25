@@ -69,6 +69,7 @@ public class Main {
                 System.out.println(message.printMessages());
                 }
             System.out.println("\nTotal messages sent:" + Message.returnTotalMessages());
+            // step 6: display the total count of messages processed
             }
         }
 }  
