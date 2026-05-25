@@ -53,6 +53,7 @@ public class Message {
            return "Press 0 to delete the messages.";
        }
        else {
+           // Handle all invalid pr discribed choices
            return "Message discarded.";
        }
        
