@@ -59,6 +59,7 @@ public class Message {
 /** Formats and outputs the message dara. */ 
        // Combine thr ID and message hash 
    }
+    // combines the recipient and text body
    public String printMessages(){
        return "Message ID: " + messageID
        + "\nMessage Hash:" + createMessageHash()
