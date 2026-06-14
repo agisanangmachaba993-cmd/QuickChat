@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package rc; 
-import java.util.Scanner;
+import java.util.Scanner; 
 
 /**
  *part 1 ,2 and 3 functionality  
