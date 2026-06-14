@@ -30,7 +30,7 @@ public class Main {
                 System.out.println("\nEnter message ID:");
                 String messageID = input.nextLine();
                 
-                System.out.println("Enter recipient number:");
+                System.out.println("Enter recipient number:"); 
                 String recipient = input.nextLine();
                 
                 System.out.println("Enter message:");
