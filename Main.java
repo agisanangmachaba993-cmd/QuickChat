@@ -25,7 +25,7 @@ public class Main {
             int numberOfMessages = input.nextInt();
             input.nextLine();
             
-            Message[] messages = new Message[numberOfMessages];
+            Message[] messages = new Message[numberOfMessages]; 
             for (int i = 0; i < numberOfMessages; i++){
                 System.out.println("\nEnter message ID:");
                 String messageID = input.nextLine();
