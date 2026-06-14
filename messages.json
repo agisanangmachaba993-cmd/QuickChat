@@ -1,0 +1,33 @@
+[
+  {
+    "messageID": "MSG001",
+    "recipient": "+27834557896",
+    "messageText": "Did you get the cake?",
+    "messageHash": "MS:1:DIDCAKE"
+  },
+  {
+    "messageID": "MSG002",
+    "recipient": "+27838884567",
+    "messageText": "Where are you? You are late! I have asked you to be on time.",
+    "messageHash": "MS:2:WHERETIME"
+  },
+  {
+    "messageID": "MSG003",
+    "recipient": "+27834484567",
+    "messageText": "Yohoooo, I am at your gate.",
+    "messageHash": "MS:3:YOHOOOOGATE"
+  },
+  {
+    "messageID": "0838884567",
+    "recipient": "+27838884567",
+    "messageText": "It is dinner time !",
+    "messageHash": "08:4:ITTIME"
+  },
+  {
+    "messageID": "MSG005",
+    "recipient": "+27838884567",
+    "messageText": "Ok, I am leaving without you.",
+    "messageHash": "MS:5:OKYOU"
+  }
+]
+

@@ -6,11 +6,10 @@ package rc;
 import java.util.Scanner;
 
 /**
- *
+ *part 1 ,2 and 3 functionality
  * @author User
  */
 public class Main {
-    // step:1 Main entry point for Quickchat application
     public static void main(String[]args){
         Scanner input = new Scanner(System.in);
         Login login = new Login();
@@ -22,7 +21,6 @@ public class Main {
         
         boolean loginStatus = login.loginUser(username, password);
         if (loginStatus){
-            // step 2: Check login status before sending messages
             System.out.println("\nHow many messages would you like to send?");
             int numberOfMessages = input.nextInt();
             input.nextLine();
@@ -38,7 +36,6 @@ public class Main {
                 System.out.println("Enter message:");
                 String messageText = input.nextLine();
                 if(messageText.length() > 250){
-                    // step 3: validate the message length does not exceed 250 characters
                    System.out.println("Message exceds 250 charaters by" +(messageText.length()-250));
                    i--;
                    continue;
@@ -50,7 +47,6 @@ public class Main {
                     continue;
                 }
                 if (!message.checkRecipientCell()){
-                    // step 4:Check if the recipent cell phone number is valid
                     System.out.println("Cell phone number is incorrectly formatted");
                     i--;
                     continue;
@@ -61,7 +57,6 @@ public class Main {
                 System.out.println("3.Disregard Message");
                 
                 int choice = input.nextInt();
-                // step 5: capture user menu choice for message handling
                 input.nextLine();
                 
                 System.out.println(message.sentMessage(choice));
@@ -69,7 +64,59 @@ public class Main {
                 System.out.println(message.printMessages());
                 }
             System.out.println("\nTotal messages sent:" + Message.returnTotalMessages());
-            // step 6: display the total count of messages processed
-            }
-        }
-}  
+            
+        
+    // part 3 - Read Message MENU
+    boolean running = true;
+    while (running){
+   System.out.println("\n====Choose option====");
+   System.out.println("1. Display sender and recipient of all stored messages");
+                System.out.println("2.Display the longest Stored Message");
+                System.out.println("3.Search for message ID");
+                System.out.println("4. Search for message by recipient");
+                System.out.println("5. Delete a message using message Hash");
+                System.out.println("6. Display full message report");
+                System.out.println("0. Exit");
+                System.out.println("Choose option:");   
+    int menuChoice = Integer.parseInt(input.nextLine());
+    
+    
+    switch (menuChoice){
+        case 1 :
+            System.out.println(Message.displaySenderRecipient());
+            break;
+        case 2:
+            System.out.println(Message.displayLongestMessage());
+            break;
+        case 3 :
+            System.out.println("Enter message ID to search:");
+            String searchID = input.nextLine();
+            System.out.println(Message.searchByMessageID(searchID));
+            break;
+        case 4:
+            System.out.println("Enter recipient number to search:");
+            String searchRec = input.nextLine();
+            System.out.println(Message.searchByRecipient(searchRec));
+            break;
+        case 5:
+            System.out.println("Enter message hash to delete:");
+            String hashToDelete = input.nextLine();
+            System.out.println(Message.deleteByHash(hashToDelete));
+            break;
+        case 6:
+            System.out.println(Message.displayReport());
+            break;
+        case 0:
+            running = false;
+            System.out.println("Goodbye!");
+            break;
+        default:
+            System.out.println("Invalid option. Please try again.");
+    }
+}
+        } else {
+          System.out.println("Username or password incorrect, please try again.");  
+} 
+        input.close();
+ }
+}
