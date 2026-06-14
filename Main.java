@@ -6,7 +6,7 @@ package rc;
 import java.util.Scanner; 
 
 /**
- *part 1 ,2 and 3 functionality  
+ *part 1 ,2 and 3 functionality   
  * @author User 
  */
 public class Main {
