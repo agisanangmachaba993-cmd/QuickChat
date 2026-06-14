@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 /**
  *part 1 ,2 and 3 functionality  
- * @author User
+ * @author User 
  */
 public class Main {
     public static void main(String[]args){
